@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix{
+    margin: 0 15px;
+}
+
+.section-title h2{
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    box-sizing: border-box;
+    text-align: left !important;
+}
+.section-title h2:before {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #eaeaea;
+}
+
+.section-title h2:after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background: #ed9106;
+}
+/*
+====================================================================
+    Navbar style
+====================================================================
+*/
+.btn-color{
+    /*background-color:#0393b0;*/
+    background-color:#ed9106;
+    border: none;
+    opacity: 1;
+}
+.btn-color:hover{
+    background-color:#ed9106;
+    border: none;
+    opacity: 0.6;
+}
+.nav-link-new{
+    padding: 9px 24px;
+    color:white;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.nav-link-new:hover{
+    opacity: 1;
+    color: white;
+}
+
+/* Begin: Content */
+/*
+====================================================================
+    Why choose-us Section style
+====================================================================
+*/
+.choose-us{
+padding: 75px 0 30px  0;
+text-align: center;
+background: #f7f7f7;
+}
+
+.choose-us .column{
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.choose-us .item{
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+}
+
+.choose-us .icon-box{
+    margin-bottom: 20px;
+    
+}
+
+.choose-us h4{
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 15px;
+}
+.choose-us .item p{
+    position: relative;
+    min-height: 102px !important;
+    font-family: 'Hind', sans-serif;
+    font-size: 16px;
+    color: #2f2f33;
+    line-height: 26px;
+    font-weight: 400;
+    min-height: 128px;
+    margin-bottom: 2px;
+}
+.choose-us .item::before,
+.choose-us .item p:before{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    content: "";
+    background: #eaeaea;
+    left: 0;
+    bottom: 0;
+}
+.choose-us .item:after,
+.choose-us .item p:after{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    content: "";
+    background: #ed9106; 
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: .5s ease;
+}
+.choose-us .item:hover:after,
+.choose-us .item:hover p:after {
+  transform: scaleX(1);
+  transition: .5s ease;
+}
+
+/*
+====================================================================
+    Counter Section style
+====================================================================
+*/
+.counter{
+    position: relative;
+    padding: 60px 0px 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    margin-bottom: 3px;
+    color: #ffffff;
+    text-align: center;
+    background:linear-gradient(0deg,rgba(10, 27, 34, 0.95),rgba(10, 27, 34, 0.95)) ,url(/img/content/cover.jpg);
+
+}
+
+.counter .item{
+    position: relative;
+    border: 2px solid #19333e;
+    color: #fff;
+    padding: 17px 0 32px;
+}
+.counter .timer{
+    font-size: 30px;
+}
+.counter h4{
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Hind", Sans-serif;
+    color: #ed9106;
+    line-height: 1.1;
+}
+.counter .icon{
+    float: right;
+}
+.counter .far,
+.counter .fas{
+    color: #ed9106;
+    opacity: 0.6;
+    padding: 0 12px 12px 12px;
+    font-size: 24px;
+}
+/*
+====================================================================
+    Services Section style
+====================================================================
+*/
+.services{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+.services-content{
+    position: relative;
+    margin-top: 36px;
+    text-align: center;
+
+}
+.services-content img{
+    border-radius: 4%;
+}
+.services-content a{
+    position: absolute;
+    padding-top: 12px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+/*
+====================================================================
+    Our Customers Section style
+====================================================================
+*/
+.content-customers{
+    background-color: #fff;
+    height: 240px;
+}
+
+/*
+====================================================================
+    Footer Section style
+====================================================================
+*/
+.footer{
+    background-color: #10252e;
+    height: 360px;
+    color: #fff;
+}
+
+.footer__title{
+    margin-top: 40px;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.menu__footer-services{
+    padding-left: 0px;
+    text-align: left;
+    list-style-type: none;
+    
+}
+.menu__footer-services li{
+    margin: 12px 0px;
+    left: 0px;
+    top: 0px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #ed9106;
+}
+.menu__items a{
+    padding-left: 0px;
+    margin-bottom: 16px;
+    line-height: 24px;
+    color: #959595;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+.menu__item:hover{
+    color: #ed9106;
+    text-decoration: underline;
+}
+.menu__items h4{
+    margin-bottom: 15px;
+    color: #959595;
+    font-size: 18px;
+}
+
